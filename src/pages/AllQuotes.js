@@ -1,3 +1,5 @@
+import QuoteList from "../components/quotes/QuoteList";
+
 const DUMMY_DATA = [
   {
     id: 1,
@@ -17,7 +19,7 @@ const DUMMY_DATA = [
 ];
 
 const AllQuotes = () => {
-  return <div>AllQuotes</div>;
+  return <QuoteList quotes={DUMMY_DATA} />;
 };
 
 export default AllQuotes;
