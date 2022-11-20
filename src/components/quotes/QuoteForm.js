@@ -21,6 +21,7 @@ const QuoteForm = (props) => {
     props.onAddQuote({ author: enteredAuthor, text: enteredText });
   }
 
+  // check if form has been set on focus
   const onFocusHandler = () => {
     setIsFormOnFocus(true);
     console.log("Focus!");
