@@ -28,7 +28,10 @@ const QuoteList = (props) => {
 
   // re-render page by updating url dynamically and sorting quotes by id
   const changeSortingHandler = () => {
-    history.push("/quotes?sort=" + (isSortingAscending ? "desc" : "asc"));
+    history.push({
+      pathname: location.pathname,
+      search: `?sort=${isSortingAscending ? "desc" : "asc"}`,
+    });
   };
 
   return (
