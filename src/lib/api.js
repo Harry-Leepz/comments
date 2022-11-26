@@ -1,5 +1,5 @@
 const FIREBASE_DOMAIN =
-  "https://react-customhooks-87d57-default-rtdb.europe-west1.firebasedatabase.app/";
+  "https://react-customhooks-87d57-default-rtdb.europe-west1.firebasedatabase.app";
 
 export async function getAllQuotes() {
   const response = await fetch(`${FIREBASE_DOMAIN}/quotes.json`);
